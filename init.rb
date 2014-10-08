@@ -9,8 +9,7 @@ end
 
 class MakeAGifViewListener < Redmine::Hook::ViewListener
   def view_layouts_base_html_head(context)
-    javascript_include_tag("animated_gif.js", :plugin => "redmine_make_a_gif") +
-	javascript_include_tag("gumhelper.js", :plugin => "redmine_make_a_gif") +
+    javascript_include_tag("gifshot.js", :plugin => "redmine_make_a_gif") +
 	javascript_include_tag("main.js", :plugin => "redmine_make_a_gif")
   end
 end
